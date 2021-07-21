@@ -10,7 +10,7 @@ for pageNum in range(pdfReader.numPages):
     pdfWriter.addPage(pdfReader.getPage(pageNum))
 
 # Encrypt with your password
-pdfWriter.encrypt('yulan')
+pdfWriter.encrypt('password')
 
 # Write it to an output file. (you can delete unencrypted version now)
 resultPdf = open('encrypted_output.pdf', 'wb')
